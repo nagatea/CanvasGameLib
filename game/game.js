@@ -17,13 +17,13 @@ class Game {
 
   draw() {
     // ここにゲームの描画部分を書いていく
-    context.globalAlpha = 1.0
-    context.fillStyle = "black"
-    context.font = "80px 'Agency'"
-    context.textAlign = "center"
-    context.fillText("Game Scene", canvas.width / 2, canvas.height / 2)
-    context.font = "50px 'Agency'"
-    context.fillText(`経過時間: ${this.formatTime(this.timer)}秒`, canvas.width / 2, canvas.height / 2 + 80)
+    ctx.globalAlpha = 1.0
+    ctx.fillStyle = "black"
+    ctx.font = "80px 'Agency'"
+    ctx.textAlign = "center"
+    ctx.fillText("Game Scene", canvas.width / 2, canvas.height / 2)
+    ctx.font = "50px 'Agency'"
+    ctx.fillText(`経過時間: ${this.formatTime(this.timer)}秒`, canvas.width / 2, canvas.height / 2 + 80)
   }
 
   formatTime(num) {

@@ -16,10 +16,10 @@ class Title {
   draw() {
     // ここにゲームの描画部分を書いていく
     drawImage("title", 0, 0, 600, 400)
-    context.globalAlpha = 1.0
-    context.fillStyle = "black"
-    context.font = "30px 'Agency'"
-    context.textAlign = "center"
-    context.fillText(this.text, 300, 360)
+    ctx.globalAlpha = 1.0
+    ctx.fillStyle = "black"
+    ctx.font = "30px 'Agency'"
+    ctx.textAlign = "center"
+    ctx.fillText(this.text, 300, 360)
   }
 }

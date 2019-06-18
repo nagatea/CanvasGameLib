@@ -22,6 +22,6 @@ const loadImages = (directory) => {
 // 描画する前にloadImageでkeyを登録しておかないといけない
 const drawImage = (key, sx, sy, sw, sh, dx, dy, dw, dh) => {
   if (sw === undefined) ctx.drawImage(images[key].image, sx, sy)
-  else if (dx === undefined) context.drawImage(images[key].image, sx, sy, sw, sh)
-  else context.drawImage(images[key].image, sx, sy, sw, sh, dx, dy, dw, dh)
+  else if (dx === undefined) ctx.drawImage(images[key].image, sx, sy, sw, sh)
+  else ctx.drawImage(images[key].image, sx, sy, sw, sh, dx, dy, dw, dh)
 }

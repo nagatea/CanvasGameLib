@@ -42,8 +42,8 @@ const step = _ => {
 }
 
 const draw = _ => {
-  context.fillStyle = "black"
-  context.clearRect(0, 0, 600, 400)
+  ctx.fillStyle = "black"
+  ctx.clearRect(0, 0, 600, 400)
   if (scene == SCENE.Title) {
     title.draw()
   } else if (scene == SCENE.Game) {
